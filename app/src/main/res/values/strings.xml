@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BookTourDemo</string>
+    <string name="facebook_app_id">1351739675949213</string>
+    <string name="fb_login_protocol_scheme">fb1351739675949213</string>
+    <string name="facebook_client_token">b7600cd0ecb8928c78211b5b32b11279</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyAMRNU63krcoBgNvANCnaGUF381ewboIas
+    </string>
+</resources>

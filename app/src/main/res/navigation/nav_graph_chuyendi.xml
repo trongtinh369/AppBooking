@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph_chuyendi"
+    app:startDestination="@id/nav_upcoming_trips">
+
+    <!-- Fragment cho "Chuyến đi sắp tới" -->
+    <fragment
+        android:id="@+id/nav_upcoming_trips"
+        android:name="com.example.booktourdemo.fragments.chuyendi_fragmentchild.ChuyenDiSapToiFragment"
+        android:label="Chuyến đi sắp tới">
+    </fragment>
+
+    <!-- Fragment cho "Tour chưa thanh toán" -->
+    <fragment
+        android:id="@+id/nav_unpaid_tours"
+        android:name="com.example.booktourdemo.fragments.chuyendi_fragmentchild.TourChuaThanhToanFragment"
+        android:label="Tour chưa thanh toán">
+    </fragment>
+
+</navigation>

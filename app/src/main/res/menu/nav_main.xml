@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/ic_home"
+        android:title="Trang chủ" />
+    <item
+        android:id="@+id/menu_save"
+        android:icon="@drawable/ic_heart"
+        android:title="Yêu thích"/>
+    <item
+        android:id="@+id/menu_bookings"
+        android:icon="@drawable/ic_booking"
+        android:title="Chuyến đi" />
+    <item
+        android:id="@+id/menu_profile"
+        android:icon="@drawable/ic_user"
+        android:title="Tài khoản" />
+</menu>

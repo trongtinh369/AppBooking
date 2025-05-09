@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Home"
+        android:id="@+id/Home"
+        android:icon="@drawable/home_crud"/>
+    <item android:title="Schedule"
+        android:id="@+id/Schedule"
+        android:icon="@drawable/schedule_tour"/>
+    <item android:title="Manager"
+        android:id="@+id/Manager"
+        android:icon="@drawable/manager_crud"/>
+</menu>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <!-- Avatar của User (hình tròn) -->
+    <ImageView
+        android:id="@+id/image_avatar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/circle_background"
+        android:clipToOutline="true"
+        android:contentDescription="User Avatar"
+        android:scaleType="centerCrop"
+        android:src="@android:drawable/dark_header" />
+
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/transparent"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="4dp"
+        android:text="User Name"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/text_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/transparent"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="4dp"
+        android:text="user@example.com"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp" />
+
+    <!-- Nút Trang Admin -->
+    <Button
+        android:id="@+id/button_admin_page"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="@color/blue_primary"
+        android:paddingHorizontal="16dp"
+        android:text="Trang Admin"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+
+    <Button
+        android:id="@+id/button_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:paddingHorizontal="16dp"
+        android:text="Đăng Xuất"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+</LinearLayout>

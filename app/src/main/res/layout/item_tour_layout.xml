@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/card_margin"
+    app:cardCornerRadius="@dimen/card_corner_radius"
+    app:cardElevation="@dimen/card_elevation">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/card_padding"
+        android:background="#FFFFFF">
+
+        <!-- Image -->
+        <ImageView
+            android:id="@+id/imgAnhTour"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/vt2"
+            app:layout_constraintDimensionRatio="16:9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Tour Name -->
+        <TextView
+            android:id="@+id/tvTenTour"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_margin_top"
+            android:text="Khám phá Vũng Tàu"
+            android:textSize="@dimen/text_size_title"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:gravity="center_horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgAnhTour" />
+
+        <!-- Date Row -->
+        <TextView
+            android:id="@+id/tvDateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ngày:"
+            android:textSize="@dimen/text_size_normal"
+            android:textColor="#666666"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTenTour"
+            android:layout_marginTop="@dimen/text_margin_top_small" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="27/3/2025"
+            android:textSize="@dimen/text_size_normal"
+            android:textColor="#000000"
+            android:singleLine="true"
+            android:ellipsize="end"
+            app:layout_constraintStart_toEndOf="@id/tvDateLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvDateLabel"
+            android:layout_marginStart="@dimen/text_margin_start" />
+
+        <!-- Price, Location, and Buttons -->
+        <TextView
+            android:id="@+id/tvGiaLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giá:"
+            android:textSize="@dimen/text_size_normal"
+            android:textColor="#666666"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvDateLabel"
+            android:layout_marginTop="@dimen/text_margin_top" />
+
+        <TextView
+            android:id="@+id/tvGiaTien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100.000đ"
+            android:textSize="@dimen/text_size_price"
+            android:textColor="#FF0000"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:ellipsize="end"
+            app:layout_constraintStart_toEndOf="@id/tvGiaLabel"
+            app:layout_constraintTop_toTopOf="@id/tvGiaLabel"
+            android:layout_marginStart="@dimen/text_margin_start" />
+
+        <TextView
+            android:id="@+id/tvDiaDiem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Vũng Tàu"
+            android:textSize="@dimen/text_size_location"
+            android:textColor="#333333"
+            android:singleLine="true"
+            android:ellipsize="end"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnSuaThongTin"
+            app:layout_constraintTop_toBottomOf="@id/tvGiaLabel"
+            android:layout_marginTop="@dimen/text_margin_top_small" />
+
+        <Button
+            android:id="@+id/btnSuaThongTin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/button_min_width"
+            android:text="Sửa"
+            android:textSize="@dimen/text_size_normal"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="@color/blue"
+            app:layout_constraintEnd_toStartOf="@id/btnXoa"
+            app:layout_constraintTop_toBottomOf="@id/tvDateLabel"
+            android:layout_marginEnd="@dimen/button_margin_end" />
+
+        <Button
+            android:id="@+id/btnXoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/button_min_width"
+            android:text="Xoá"
+            android:textSize="@dimen/text_size_normal"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="@color/red"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvDateLabel" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/trangChuFragment">
+
+    <!-- Trang Chủ Fragment -->
+    <fragment
+        android:id="@+id/trangChuFragment"
+        android:name="com.example.booktourdemo.AdminTour.TrangChuTourFragment"
+        android:label="Home">
+        <!-- Thêm action để điều hướng tới các Fragment khác -->
+        <action
+            android:id="@+id/action_trangChu_to_suaTour"
+            app:destination="@id/suaTourFragment" />
+        <action
+            android:id="@+id/action_trangChu_to_quanLiFragment"
+            app:destination="@id/quanLiFragment" />
+        <action
+            android:id="@+id/action_trangChu_to_trangChuScheduleFragment"
+            app:destination="@id/quanLiFragment" />
+    </fragment>
+
+    <!-- Quản lý Fragment -->
+    <fragment
+        android:id="@+id/quanLiFragment"
+        android:name="com.example.booktourdemo.AdminTour.Manager.Fragment.QuanLyFragment"
+        android:label="ManagerAdmin">
+        <action
+            android:id="@+id/action_quanLi_to_trangChu"
+            app:destination="@id/trangChuFragment" />
+        <action
+            android:id="@+id/action_quanLi_to_trangChuSchedule"
+            app:destination="@id/trangchuScheduleFragment" />
+        <action
+            android:id="@+id/action_quanLy_to_themTour"
+            app:destination="@id/themtoursFragment" />
+        <action
+            android:id="@+id/action_quanLy_to_themSchedule"
+            app:destination="@id/themScheduleFragment" />
+    </fragment>
+
+    <!-- Sửa Tour Fragment -->
+    <fragment
+        android:id="@+id/suaTourFragment"
+        android:name="com.example.booktourdemo.AdminTour.Manager.Fragment.Tour.SuaToursFragment"
+        android:label="Edit Tour">
+        <!-- Thêm action để quay lại Trang Chủ nếu cần -->
+        <action
+            android:id="@+id/action_suaTour_to_trangChu"
+            app:destination="@id/trangChuFragment" />
+    </fragment>
+
+    <!-- Thêm Tour Fragment -->
+    <fragment
+        android:id="@+id/themtoursFragment"
+        android:name="com.example.booktourdemo.AdminTour.Manager.Fragment.Tour.ThemTourFragment"
+        android:label="Add Tour">
+        <!-- Thêm action để quay lại Trang Chủ nếu cần -->
+        <action
+            android:id="@+id/action_themtours_to_trangChu"
+            app:destination="@id/trangChuFragment" />
+    </fragment>
+
+    <!-- Trang chu schedule Fragment -->
+    <fragment
+        android:id="@+id/trangchuScheduleFragment"
+        android:name="com.example.booktourdemo.AdminTour.Manager.Fragment.TrangChuScheduleFragment"
+        android:label="Trang Chu Schedule">
+        <action
+            android:id="@+id/action_trangChuScheduleFragment_to_quanLiFragment"
+            app:destination="@id/quanLiFragment" />
+        <action
+            android:id="@+id/action_trangChuScheduleFragment_to_trangChuFragment"
+            app:destination="@id/trangChuFragment" />
+        <action
+            android:id="@+id/action_trangChuScheduleFragment_to_suaScheduleFragment"
+            app:destination="@id/suaScheduleFragment" />
+    </fragment>
+
+    <!-- Thêm schedule Fragment -->
+    <fragment
+        android:id="@+id/themScheduleFragment"
+        android:name="com.example.booktourdemo.AdminTour.Manager.Fragment.Schedule.ThemScheduleFragment"
+        android:label="Thêm lịch trình">
+        <action
+            android:id="@+id/action_themScheduleFragment_to_quanLiFragment"
+            app:destination="@id/quanLiFragment" />
+    </fragment>
+
+    <!-- Sửa schedule Fragment -->
+    <fragment
+        android:id="@+id/suaScheduleFragment"
+        android:name="com.example.booktourdemo.AdminTour.Manager.Fragment.Schedule.SuaScheduleFragment"
+        android:label="Thêm lịch trình">
+        <action
+            android:id="@+id/action_suaScheduleFragment_to_trangChuScheduleFragment"
+            app:destination="@id/trangchuScheduleFragment" />
+    </fragment>
+</navigation>

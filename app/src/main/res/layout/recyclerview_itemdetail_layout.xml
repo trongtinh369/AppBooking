@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!-- ImageView ở trên cùng -->
+        <ImageView
+            android:id="@+id/image_tour_detail"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:contentDescription=""
+            android:src="@android:color/darker_gray" />
+
+        <!-- Thông tin tour bên dưới -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <!-- Tiêu đề tour -->
+            <TextView
+                android:id="@+id/text_tour_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="An Ngyen Lakeside Residence"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black" />
+
+            <!-- Mô tả -->
+            <TextView
+                android:id="@+id/text_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Khách sạn sang trọng bên hồ"
+                android:textSize="14sp"
+                android:textColor="@android:color/black" />
+
+            <!-- Thời gian (duration) -->
+            <TextView
+                android:id="@+id/text_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="2 đêm"
+                android:textSize="14sp"
+                android:textColor="@android:color/black" />
+
+            <!-- Số người tối đa -->
+            <TextView
+                android:id="@+id/text_max_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Tối đa 4 người"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:drawableStart="@android:drawable/ic_menu_myplaces"
+                android:drawablePadding="4dp" />
+
+            <!-- Giá -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <!-- Giá hiện tại -->
+                <TextView
+                    android:id="@+id/text_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VND 1.998.000"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/holo_red_dark" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/menu_home">
+
+    <fragment
+        android:id="@+id/menu_home"
+        android:name="com.example.booktourdemo.fragments.TrangChuFragment"
+        android:label="Trang chủ" />
+<!--    <fragment-->
+<!--        android:id="@+id/menu_save"-->
+<!--        android:name="com.example.booktourdemo.fragments.SaveFragment"-->
+<!--        android:label="Yêu thích" />-->
+    <fragment
+        android:id="@+id/menu_bookings"
+        android:name="com.example.booktourdemo.fragments.ChuyenDiFragment"
+        android:label="Chuyến đi" />
+    <fragment
+        android:id="@+id/menu_profile"
+        android:name="com.example.booktourdemo.fragments.AccountFragment"
+        android:label="Tài khoản" />
+
+</navigation>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!-- ImageView ở trên cùng -->
+        <ImageView
+            android:id="@+id/image_tour_detail"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription=""
+            android:scaleType="centerCrop"
+            android:src="@android:color/darker_gray" />
+
+        <!-- Thông tin tour bên dưới -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <!-- Tiêu đề tour -->
+            <TextView
+                android:id="@+id/text_tour_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="An Ngyen Lakeside Residence"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Trái: Thời gian, số người -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:drawableStart="@android:drawable/ic_menu_myplaces"
+                        android:drawablePadding="8dp"
+                        android:text="2 đêm"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_duration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:drawableStart="@android:drawable/ic_menu_day"
+                        android:drawablePadding="8dp"
+                        android:text="2 đêm"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_people"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@android:drawable/ic_menu_myplaces"
+                        android:drawablePadding="8dp"
+                        android:text="Tối đa 4 người"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <!-- Phải: Ngày -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_start_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="Bắt đầu: 01/05/2025"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/text_end_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kết thúc: 03/05/2025"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="14sp" />
+
+                    <!-- TextView for city -->
+                    <TextView
+                        android:id="@+id/text_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:drawableStart="@android:drawable/ic_menu_mapmode"
+                        android:drawablePadding="8dp"
+                        android:text="City Name"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="16sp" />
+
+                    <!-- TextView for country -->
+                    <TextView
+                        android:id="@+id/text_country"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:drawableStart="@android:drawable/ic_menu_compass"
+                        android:drawablePadding="8dp"
+                        android:text="Country Name"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VND 1.998.000"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_huy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="Hủy"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@android:color/holo_red_dark"
+                app:cornerRadius="8dp"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
